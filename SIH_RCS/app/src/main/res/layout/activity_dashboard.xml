@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@drawable/landing_background">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#22ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="From"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvFromCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:hint="DEL"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/dashArrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="40dp"
+                    android:src="@drawable/dash_arrow"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                   />
+
+                <TextView
+                    android:id="@+id/tvToCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:hint="CCU"
+                    android:textColorHint="#fff"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/actvFrom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="DELHI"
+                android:textSize="22dp"
+                android:background="#00ace6"
+                android:textColorHint="#66ffffff"
+                android:gravity="center"
+                android:layout_marginRight="1dp"/>
+            <!--<Button
+                android:id="@+id/btnFrom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="#0fff"/>-->
+
+            <AutoCompleteTextView
+                android:id="@+id/actvTo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="KOLKATA"
+                android:layout_marginLeft="1dp"
+                android:textSize="22dp"
+                android:background="#00ace6"
+                android:textColorHint="#66ffffff"
+                android:gravity="center"/>
+            <!--<Button
+                android:id="@+id/btnTo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="#0fff"/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#22ffffff"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_depart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:text="Depart on"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="10dp"/>
+                    <ImageView
+                        android:id="@+id/ivCalDepOn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/iccalendarwhite"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvDepartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="21 Feb"
+                    android:textColorHint="#ffffff"
+                    android:textColor="#fff"
+                    android:textSize="40dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/tvDepartDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thu 2019"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_return"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:text="Return on"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="10dp"/>
+                    <ImageView
+                        android:id="@+id/ivCalRetOn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/iccalendarwhite"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvReturnDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="21 Feb"
+                    android:textColorHint="#ffffff"
+                    android:textColor="#fff"
+                    android:textSize="40dp"
+                    android:focusedByDefault="false"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/tvReturnDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thu 2019"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <Spinner
+                android:id="@+id/spinnerEconomy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF00ACE6"
+                android:textAlignment="center"
+                android:layout_margin="2dp"
+                >
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spinnerTrip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:background="#FF00ACE6"
+                android:layout_margin="2dp"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btnTravellers"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="100dp"
+                android:text="Travellers : 0"
+                android:background="@drawable/tv_round_corner_"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="150dp"
+                android:textSize="18sp"
+                android:background="@drawable/btn_round_corner"
+                android:text="Search">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="#FF00ACE6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>

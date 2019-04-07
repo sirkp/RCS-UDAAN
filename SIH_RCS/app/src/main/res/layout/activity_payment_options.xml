@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PaymentOptions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lefttorightarrow"
+            android:tint="#fff"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Payment options"
+            android:layout_weight="0.2"
+            android:textSize="34sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay with:"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"/>
+        <Button
+            android:id="@+id/btnRcsWallet"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="RCS Wallet"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_round_corner"
+            />
+        <Button
+            android:id="@+id/btnDebitCard"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Debit Card"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_round_corner"
+            />
+        <Button
+            android:id="@+id/btnOther"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Other"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_round_corner"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

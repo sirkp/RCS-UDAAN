@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyWallet"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lefttorightarrow"
+            android:tint="#fff"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="My Wallet"
+            android:layout_weight="0.2"
+            android:textSize="34sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="20sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_gradient"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/rupees2"
+            android:paddingVertical="30dp"
+            android:paddingLeft="30dp"
+            android:tint="#fff"/>
+
+        <TextView
+            android:id="@+id/tvMyWalletRs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="47,238"
+            android:textColor="#fff"
+            android:textSize="50dp"
+            android:gravity="center_vertical"
+            android:textFontWeight=""
+            />
+        <TextView
+            android:id="@+id/tvMyWalletPaise"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="50"
+            android:textColor="#fff"
+            android:paddingTop="15dp"
+            android:paddingLeft="20dp"
+            android:textSize="30dp"
+            android:gravity="center_vertical"
+            android:textFontWeight=""
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp"
+        android:background="#eee"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llMyWalletAddMoney"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/round_corner"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/plus"
+                android:tint="#aaa"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:paddingLeft="20dp"
+                android:text="Add Money"
+                android:textSize="30dp"
+                android:gravity="center_vertical"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+        <LinearLayout
+            android:id="@+id/llMyWalletPassbook"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/round_corner"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/passbook"
+                android:tint="#aaa"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:paddingLeft="20dp"
+                android:text="Passbook"
+                android:textSize="30dp"
+                android:gravity="center_vertical"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

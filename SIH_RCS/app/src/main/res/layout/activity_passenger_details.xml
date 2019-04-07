@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ECEFF1"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grad"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:paddingLeft="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:text="Travellers"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textSize="40sp"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:clickable="true"
+                android:id="@+id/iv_add_passsenger"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:layout_height="60dp"
+                android:src="@drawable/add_passenger"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b2a2a2" />
+        <TextView
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textSize="32dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b2a2a2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_marginTop="8dp"
+                android:paddingTop="2dp"
+                android:paddingLeft="8dp"
+                android:elevation="5dp"
+                android:paddingBottom="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="28sp"
+                android:background="@drawable/myrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email "/>
+
+            <EditText
+                android:layout_marginTop="8dp"
+                android:elevation="5dp"
+                android:layout_marginBottom="8dp"
+                android:paddingTop="2dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="28sp"
+                android:background="@drawable/myrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#b2a2a2" />
+            <TextView
+                android:paddingLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Passenger"
+                android:textSize="32dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#b2a2a2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_p1"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Pradeep"
+                    android:textSize="32dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#b2a2a2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_p2"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Pradeep"
+                    android:textSize="32dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#b2a2a2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_p3"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Pradeep"
+                    android:textSize="32dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#b2a2a2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_p4"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Pradeep"
+                    android:textSize="32dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#b2a2a2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_p5"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Pradeep"
+                    android:textSize="32dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#b2a2a2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_p6"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Pradeep"
+                    android:textSize="32dp"/>
+
+            </LinearLayout>
+            <!--<android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rv_passenger_list">
+            </android.support.v7.widget.RecyclerView>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_price"
+                android:text="Rs.5000"
+                android:layout_width="0dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/grad"
+                android:textSize="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="1dp"
+                android:background="#b2a2a2" />
+            <TextView
+                android:id="@+id/tv_book"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:background="@drawable/grad_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Book Now"
+                android:textSize="40sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dim"
+        android:alpha="0"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/black"/>
+
+    <include layout="@layout/activity_add_passenger" />
+
+</RelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewTicket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        card_view:cardCornerRadius="4dp"
+        android:background="@color/grey"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#008ae6"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivTicketAirlineLogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/logo_rcs_gray"
+                    android:tint="#000"
+                    />
+                <TextView
+                    android:id="@+id/tvTicketAirline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Airline"
+                    android:textSize="24dp"
+                    android:textColor="#000"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#dddddd">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTicketFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Delhi"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:gravity="center"/>
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:layout_weight="1"
+                       android:src="@drawable/lefttorightarrow"
+                       android:tint="#000"
+                       android:padding="5dp"/>
+
+                   <TextView
+                       android:id="@+id/tvTicketTo"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:text="Kolkata"
+                       android:textSize="20sp"
+                       android:textStyle="bold"
+                       android:textColor="#000"
+                       android:gravity="center"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTicketDepartTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="17:00"
+                        android:textColor="#111"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/tvTicketDuration"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="1hr 30min"
+                        android:textColor="#111"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/tvTicketArrivalTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="18:30"
+                        android:textColor="#111"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTicketDayAndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Tue,3rd Dec 2019"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTicketStatus"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#006600"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7000"/>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
